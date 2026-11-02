@@ -43,8 +43,8 @@ If your two machines return the exact same hash, they behaved identically on thi
 
 This does not prove your fleet is safe. It usually just means they happen to share the same microarchitecture and library environment (notice how Result C contains both an Intel and an AMD chip).
 
-If you want to see the strict, bit-exact divergence at the binary level across truly identical environments, you need to run the deeper x86 harness:
-[github.com/SwapnopamMitra/x86-float32-output-divergence](https://github.com/SwapnopamMitra/x86-float32-output-divergence)
+If you want to see path-dependent divergence at the binary level on GPUs (FMA vs non-FMA, fast-math vs accurate library, and non-deterministic atomic scheduling), see the GPU harness:
+github.com/SwapnopamMitra/x86-float32-output-divergence
 
 ## What happens next?
 
