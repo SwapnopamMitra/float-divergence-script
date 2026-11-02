@@ -41,7 +41,7 @@ Same script. Five environments. Three different answers.
 
 If your two machines return the exact same hash, they behaved identically on this high-level test.
 
-This does not prove your fleet is safe. It usually just means they happen to share the same microarchitecture and library environment (notice how Result C contains both an Intel and an AMD chip).
+This does not prove your fleet is safe. It just means they happen to share the same execution path and library environment for this specific test (notice how Result C contains both an Intel and an AMD chip).
 
 If you want to see path-dependent divergence at the binary level on GPUs (FMA vs non-FMA, fast-math vs accurate library, and non-deterministic atomic scheduling), see the GPU harness:
 github.com/SwapnopamMitra/x86-float32-output-divergence
